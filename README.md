@@ -1,4 +1,4 @@
-<h1 align="center">Jetpack Compose Playground</h1>
+<h1 align="center">Sim Pakages jazz warid zong</h1>
 
 ## Introduction 🙋‍♂️
 This is a Decompile apk to source code of pakistani app Sim pakages some parts are not decompile due to not having time
