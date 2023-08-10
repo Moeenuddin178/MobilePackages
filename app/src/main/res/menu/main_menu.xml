@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/action_search"
+        android:icon="@drawable/ic_search_white"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@id/action_about"
+        android:title="About"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_rate"
+        android:title="Rate App"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_share"
+        android:title="Share App"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_moreapps"
+        android:title="More Apps"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/addItem"
+        android:icon="@drawable/ic_add_white"
+        android:title="Add Your Own Package"
+        app:showAsAction="always">
+        <menu>
+            <group>
+                <item
+                    android:id="@id/action_addjazwar"
+                    android:title="Add JazzWarid Package" />
+                <item
+                    android:id="@id/action_addtelenor"
+                    android:title="Add Telenor Package" />
+                <item
+                    android:id="@id/action_addufone"
+                    android:title="Add Ufone Package" />
+                <item
+                    android:id="@id/action_addzong"
+                    android:title="Add Zong Package" />
+            </group>
+        </menu>
+    </item>
+</menu>

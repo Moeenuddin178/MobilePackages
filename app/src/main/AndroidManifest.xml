@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilepackages" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_square"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_square"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:theme="@style/AppTheme_NoActionBar"
+            android:name=".activities.MyAddedActivity"
+            android:exported="false" />
+        <activity android:name=".activities.AboutActivity" />
+        <activity android:name=".activities.NetworkOptionDetailActivity" />
+        <activity android:name=".activities.NetworkOptionsActivity" />
+        <activity android:name=".activities.NetwoksListActivity" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ZongOthersActivity" />
+        <activity android:name=".activities.JazzOthersActivity" />
+        <activity android:name=".activities.TelenorOthersActivity" />
+        <activity android:name=".activities.UfoneOthersActivity" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

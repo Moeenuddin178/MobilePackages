@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:id="@id/design_bottom_sheet"
+    android:background="@color/colorGrey"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/shape_rect_curved"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Action" />
+    </LinearLayout>
+
+    <GridLayout
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/copyCard"
+            android:clickable="true"
+            android:layout_width="120.0dip"
+            android:layout_height="100.0dip"
+            android:foreground="?android:selectableItemBackground"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="12.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:padding="10.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:src="@drawable/ic_copy_white" />
+
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:text="Copy" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/shareCard"
+            android:clickable="true"
+            android:layout_width="120.0dip"
+            android:layout_height="100.0dip"
+            android:foreground="?android:selectableItemBackground"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="12.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:padding="10.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:src="@drawable/ic_share_white" />
+
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:text="Share" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/favCard"
+            android:clickable="true"
+            android:layout_width="120.0dip"
+            android:layout_height="100.0dip"
+            android:foreground="?android:selectableItemBackground"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="12.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/favImg"
+                    android:background="@color/colorPrimary"
+                    android:padding="10.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:src="@drawable/ic_favno_white" />
+
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/favTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:text="Remove From Fav" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</RelativeLayout>

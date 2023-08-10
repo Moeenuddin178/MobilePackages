@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_add_height"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/padding1"
+                android:text="Enter your own package and save so that you can use/update/delete it later. "
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/heading4" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding5">
+
+            <EditText
+                android:id="@+id/titleEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext"
+                android:drawableStart="@drawable/ic_title_black"
+                android:drawableLeft="@drawable/ic_title_black"
+                android:drawablePadding="@dimen/padding1"
+                android:hint="Title e.g. Weekly All in One Offer"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/padding5"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray2"
+                android:textSize="@dimen/normal_text" />
+
+            <EditText
+                android:id="@+id/durationEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableStart="@drawable/ic_calendar_black"
+                android:drawableLeft="@drawable/ic_calendar_black"
+                android:drawablePadding="@dimen/padding1"
+                android:hint="Duration e.g. 7 Days"
+                android:inputType="text|textCapSentences|textMultiLine"
+                android:padding="@dimen/padding5"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray2"
+                android:textSize="@dimen/normal_text" />
+
+            <EditText
+                android:id="@+id/volumeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableStart="@drawable/ic_volume_black"
+                android:drawableLeft="@drawable/ic_volume_black"
+                android:drawablePadding="@dimen/padding1"
+                android:hint="Volume e.g. 50MB Min,SMS,MBs"
+                android:inputType="text|textCapSentences|textMultiLine"
+                android:padding="@dimen/padding5"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray2"
+                android:textSize="@dimen/normal_text" />
+
+            <EditText
+                android:id="@+id/activationEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableStart="@drawable/ic_activate_black"
+                android:drawableLeft="@drawable/ic_activate_black"
+                android:drawablePadding="@dimen/padding1"
+                android:hint="Activation Code e.g. *700#"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/padding5"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray2"
+                android:textSize="@dimen/normal_text" />
+
+            <EditText
+                android:id="@+id/deactivationEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableStart="@drawable/ic_activate_black"
+                android:drawableLeft="@drawable/ic_activate_black"
+                android:drawablePadding="@dimen/padding1"
+                android:hint="Deactivation Code e.g. *700*4#"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/padding5"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray2"
+                android:textSize="@dimen/normal_text" />
+
+            <EditText
+                android:id="@+id/remainingEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableStart="@drawable/ic_activate_black"
+                android:drawableLeft="@drawable/ic_activate_black"
+                android:drawablePadding="@dimen/padding1"
+                android:hint="Remaining Code e.g. *700*2#"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/padding5"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray2"
+                android:textSize="@dimen/normal_text" />
+
+            <EditText
+                android:id="@+id/priceEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableStart="@drawable/ic_money_black"
+                android:drawableLeft="@drawable/ic_money_black"
+                android:drawablePadding="@dimen/padding1"
+                android:hint="Price e.g. RS 200/-"
+                android:inputType="text|textCapSentences|textMultiLine"
+                android:padding="@dimen/padding5"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray2"
+                android:textSize="@dimen/normal_text" />
+
+            <Button
+                android:id="@+id/addBtn"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:drawableStart="@drawable/ic_stats_white"
+                android:drawableLeft="@drawable/ic_stats_white"
+                android:text="Add"
+                android:textSize="@dimen/normal_text" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

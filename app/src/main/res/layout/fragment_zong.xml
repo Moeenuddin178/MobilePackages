@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:id="@id/listView"
+        android:background="@color/colorGrey"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/relLayout"
+        android:background="@color/colorGrey"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@id/image1"
+            android:layout_width="150.0dip"
+            android:layout_height="150.0dip"
+            android:src="@drawable/ic_fave_blue"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textSize="20.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@id/text11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currently no packages in this category!"
+            android:layout_below="@id/image1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-condensed" />
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your added packages will be displayed here"
+            android:layout_below="@id/text11"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorGrey">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10.0">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_weight="2.0"
+            android:background="@drawable/shape_rect_curved">
+
+            <TextView
+                android:id="@id/textGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Choose Package Type"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/heading2"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="70.0dip"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@id/callBtn"
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        android:onClick="pkg"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="15.0dip"
+                        app:cardElevation="3.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/main_icon_size"
+                                android:background="@color/colorPrimary"
+                                android:padding="@dimen/padding5"
+                                android:src="@drawable/main_call" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding5"
+                                android:text="Call"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@id/smsBtn"
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        android:onClick="pkg"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="15.0dip"
+                        app:cardElevation="3.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/main_icon_size"
+                                android:background="@color/colorPrimary"
+                                android:padding="@dimen/padding5"
+                                android:src="@drawable/main_sms" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding5"
+                                android:text="SMS"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@id/netBtn"
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        android:onClick="pkg"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="15.0dip"
+                        app:cardElevation="3.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/main_icon_size"
+                                android:background="@color/colorPrimary"
+                                android:padding="@dimen/padding5"
+                                android:src="@drawable/main_internet" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding5"
+                                android:text="3G/4G"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@id/allBtn"
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        android:onClick="pkg"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="15.0dip"
+                        app:cardElevation="3.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/main_icon_size"
+                                android:background="@color/colorPrimary"
+                                android:padding="@dimen/padding5"
+                                android:src="@drawable/main_allinone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding5"
+                                android:text="All In One"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@id/broadBtn"
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        android:onClick="pkg"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="15.0dip"
+                        app:cardElevation="3.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/main_icon_size"
+                                android:background="@color/colorPrimary"
+                                android:padding="@dimen/padding5"
+                                android:src="@drawable/main_wifi" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding5"
+                                android:text="Broadband"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@id/othersBtn"
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        android:onClick="pkg"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="15.0dip"
+                        app:cardElevation="3.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/main_icon_size"
+                                android:background="@color/colorPrimary"
+                                android:padding="@dimen/padding5"
+                                android:src="@drawable/main_others" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding5"
+                                android:text="Others"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</ScrollView>

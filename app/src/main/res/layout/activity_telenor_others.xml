@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/colorGrey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Balance Check" />
+                <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Code: *444#" android:textIsSelectable="true" />
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/Acheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Check Balance" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Card Load " />
+                <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" Scrath the card first...\n Code:  *555*followed by 14 digit number on scratch card then #\nFREE Facebook &amp; 20 MB for 30 Days" android:textIsSelectable="true" />
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/Aload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Load Card" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Balance Share" />
+                <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Usage: Dial *1*1*923xxxxxxxxx*Amount# \nAfter this, confirmation will have to be sent by replying with ‘1’\nCharges: Rs. 5.70/- per share.\nYou can share between Rs. 15.00 to Rs. 200.00.\nSmart Share can be done maximum three times a day." android:textIsSelectable="true" />
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/Ashare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Share Balance" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Advance Balance (Loan)" />
+                <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Balance: " android:textIsSelectable="true" />
+                        <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rs.15/-" android:textIsSelectable="true" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Subscribe: " android:textIsSelectable="true" />
+                        <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Dial *0#" android:textIsSelectable="true" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Un-subscribe: " android:textIsSelectable="true" />
+                        <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="..." android:textIsSelectable="true" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Charges: " android:textIsSelectable="true" />
+                        <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rs. 4.18/- will be deducted along with the advance amount when you recharge the next time" android:layout_weight="1.0" android:textIsSelectable="true" />
+                    </TableRow>
+                </TableLayout>
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/Aloan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Take Advance Balance" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Check Sim Number" />
+                <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Code: *8888#       \nOR  Empty SMS to 7421 Standard SMS rate" android:textIsSelectable="true" />
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/AchkNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Check Number" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SIM Lagao Offer" />
+                <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Customers who have not done any activity since 9th March, 2019 can use their phone for FREE for the next few days (as per details given below). Dial IVR 2222 to avail the offer. \n3000 On-net Mins, 3000 MB for 60 Days" android:textIsSelectable="true" />
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/AsimLagaoT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Activate" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nayi Sim Offer" />
+                <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Unlimited On-Net Mins, 75MB for 1 Day \nActivate within 30days of activating SIM. \nCode: *5**250#" android:textIsSelectable="true" />
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/AnewSimT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Activate" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Check SIM 3G/4G status" />
+                <TextView android:textSize="@dimen/large_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="*443#" android:textIsSelectable="true" />
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/Asim3g4g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Check" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/xlarge_text" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Helpline" />
+                <TextView android:textSize="@dimen/large_text" android:autoLink="all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Phone: +92 (42) 111 345 100 \nEmail: telenor345@telenor.com.pk \n*You will be connected to an Interactive Voice Response (IVR) System. Rs. 2 + Tax will be charged for each call connected to a Customer Relationship Officer." android:textIsSelectable="true" />
+                <Button android:textSize="@dimen/large_text" android:layout_gravity="center_horizontal" android:id="@id/Ahelpline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:text="Dial" android:drawableLeft="@drawable/ic_call_white" android:onClick="A" android:drawableStart="@drawable/ic_call_white" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

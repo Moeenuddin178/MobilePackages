@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/colorGrey"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip">
+
+                <TextView
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Balance Check" />
+
+                <TextView
+                    android:textSize="@dimen/large_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Code: *222#"
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:textSize="@dimen/large_text"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/Acheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200.0dip"
+                    android:text="Check Balance"
+                    android:drawableLeft="@drawable/ic_call_white"
+                    android:onClick="A"
+                    android:drawableStart="@drawable/ic_call_white"
+                    style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip">
+
+                <TextView
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Card Load " />
+
+                <TextView
+                    android:textSize="@dimen/large_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Scrath the card first...\n Code:  *101*PIN#"
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:textSize="@dimen/large_text"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/Aload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200.0dip"
+                    android:text="Load Card"
+                    android:drawableLeft="@drawable/ic_call_white"
+                    android:onClick="A"
+                    android:drawableStart="@drawable/ic_call_white"
+                    style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip">
+
+                <TextView
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Balance Share" />
+
+                <TextView
+                    android:textSize="@dimen/large_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Code: Dial *828# \nEnter the number where you want to send balance, then add amount, and send.\n *Minimum transferable amount: Rs.10/-.\n *Maximum transferable amount: Rs.200/-.\n *Customer must have Rs.5/- minimum remaining balance in his account after Yaari Load. \nCustomer can make 5 transactions per day."
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:textSize="@dimen/large_text"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/Ashare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200.0dip"
+                    android:text="Share Balance"
+                    android:drawableLeft="@drawable/ic_call_white"
+                    android:onClick="A"
+                    android:drawableStart="@drawable/ic_call_white"
+                    style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip">
+
+                <TextView
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Advance Balance (Loan)" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <TextView
+                            android:textSize="@dimen/large_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Balance: "
+                            android:textIsSelectable="true" />
+
+                        <TextView
+                            android:textSize="@dimen/large_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rs.25/-"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:textSize="@dimen/large_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Subscribe: "
+                            android:textIsSelectable="true" />
+
+                        <TextView
+                            android:textSize="@dimen/large_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dial *911# \nOR Send blank SMS to 911"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:textSize="@dimen/large_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Un-subscribe: "
+                            android:textIsSelectable="true" />
+
+                        <TextView
+                            android:textSize="@dimen/large_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:textSize="@dimen/large_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Charges: "
+                            android:textIsSelectable="true" />
+
+                        <TextView
+                            android:textSize="@dimen/large_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rs. 3.5 + tax will be deducted along with the advance amount when you recharge the next time"
+                            android:layout_weight="1.0"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:textSize="@dimen/large_text"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/Aloan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200.0dip"
+                    android:text="Take Advance"
+                    android:drawableLeft="@drawable/ic_call_white"
+                    android:onClick="A"
+                    android:drawableStart="@drawable/ic_call_white"
+                    style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip">
+
+                <TextView
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check Sim Number" />
+
+                <TextView
+                    android:textSize="@dimen/large_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dial *8# \n1 thing that may be this codes is different in different areas (so plz try vid different number(for example *9#,*8#,*7#6,*5#,*4#,*3#,*2#,*1#,*0#)"
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:textSize="@dimen/large_text"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/AchkNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200.0dip"
+                    android:text="Check Number"
+                    android:drawableLeft="@drawable/ic_call_white"
+                    android:onClick="A"
+                    android:drawableStart="@drawable/ic_call_white"
+                    style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip">
+
+                <TextView
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New SIM Offer" />
+
+                <TextView
+                    android:textSize="@dimen/large_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy a Zong Prepaid SIM &amp; enjoy 2,000 MB free for 3 days on Pakistan’s No. 1 data network!\nTo avail the offer simply dial *10# once after activating SIM."
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:textSize="@dimen/large_text"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/AnewSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200.0dip"
+                    android:text="Activate"
+                    android:drawableLeft="@drawable/ic_call_white"
+                    android:onClick="A"
+                    android:drawableStart="@drawable/ic_call_white"
+                    style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip">
+
+                <TextView
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SIM Lagao Offer" />
+
+                <TextView
+                    android:textSize="@dimen/large_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zong brings to you its SIM Lagao Offer. If you have not used your Zong SIM for 30 days then you can enjoy 6000 Zong minutes, 6000 SMS and 4000 MB of 4G internet for 60 days. \nRecharge and dial *2244#"
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:textSize="@dimen/large_text"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/AsimLagao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200.0dip"
+                    android:text="Activate"
+                    android:drawableLeft="@drawable/ic_call_white"
+                    android:onClick="A"
+                    android:drawableStart="@drawable/ic_call_white"
+                    style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="3.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip">
+
+                <TextView
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Helpline" />
+
+                <TextView
+                    android:textSize="@dimen/large_text"
+                    android:autoLink="all"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dial: 310 \nUAN: (051) 111-222-111 \nEmail: customercare@zong.com.pk"
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:textSize="@dimen/large_text"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/Ahelpline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200.0dip"
+                    android:text="Dial"
+                    android:drawableLeft="@drawable/ic_call_white"
+                    android:onClick="A"
+                    android:drawableStart="@drawable/ic_call_white"
+                    style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="5.0dip"
+    app:cardElevation="3.0dip"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/idTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                   android:id="@+id/titleTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:text="Title"
+                    android:hint="title"
+                    android:textSize="@dimen/xlarge_text"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Duration: "
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/durationTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="2"
+                    android:text="7 Days"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/large_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Volume: "
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/volumeTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="2"
+                    android:autoLink="all"
+                    android:text="1000 Jazz+Warid min, Offnet 50 min, 1000 SMS, 250MB"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/large_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Activation: "
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/activationTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="2"
+                    android:text="*700#"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/large_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Deactivation: "
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/deactivationTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="2"
+                    android:text="*700*4#"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/large_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Remaining: "
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/remainingTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="2"
+                    android:text="*700*2#"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/large_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Info String: "
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/infoTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="2"
+                    android:text="*700*3#"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/large_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Price: "
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/priceTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="2"
+                    android:autoLink="web"
+                    android:text="120+Tax"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/large_text" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activateBtn"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Activate"
+                android:textSize="@dimen/small_text" />
+
+            <Button
+                android:id="@+id/deactivateBtn"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Deactivate"
+                android:textSize="@dimen/small_text" />
+
+            <Button
+                android:id="@+id/remainingBtn"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Remaining"
+                android:textSize="@dimen/small_text" />
+
+            <Button
+                android:id="@+id/moreBtn"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_weight="1.0"
+                android:text="⋮"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
